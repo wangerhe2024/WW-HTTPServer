@@ -1,6 +1,6 @@
 #include "../../include/http/HttpRequest.h"
 
-namespace ww_hppt {
+namespace ww_http {
 
 void HttpRequest::setReceiveTime(muduo::Timestamp t) { receiveTime_ = t; }
 
@@ -113,4 +113,4 @@ void HttpRequest::swap(HttpRequest &that) {
   std::swap(receiveTime_, that.receiveTime_);
 }
 
-} // namespace ww_hppt
+} // namespace ww_http
