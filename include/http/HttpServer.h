@@ -31,8 +31,8 @@ namespace ww_http {
 
 class HttpServer : muduo::noncopyable {
 public:
-  using HttpCallback =
-      std::function<void(const http::HttpRequest &, http::HttpResponse *)>;
+  using HttpCallback = std::function<void(const ww_http::HttpRequest &,
+                                          ww_http::HttpResponse *)>;
 
   // 构造函数
   HttpServer(int port, const std::string &name, bool useSSL = false,
